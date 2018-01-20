@@ -1,13 +1,13 @@
-#Summary
+# Summary
 
 Just a test script to test out the Template and argparse python modules. Also build a object to generate the fibonacci numbers
 which is returned in the script when you run it via command line.\
 
-#Usage
+# Usage
 
 Number value is required to run the script.
 
-##Example
+## Example
 
 ```
 python FibFun.py 6
