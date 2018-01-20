@@ -1,7 +1,7 @@
 # Summary
 
 Just a test script to test out the Template and argparse python modules. Also build a object to generate the fibonacci numbers
-which is returned in the script when you run it via command line.\
+which is returned in the script when you run it via command line.
 
 # Usage
 
