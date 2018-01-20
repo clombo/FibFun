@@ -30,11 +30,11 @@ def Main():
 
     args = parser.parse_args()
 
-    tAllVerbose = Template("The nth fibonacci number is : $Fib. \nFull list of numbers generated: $List")
+    tAllVerbose = Template("The ${num}th fibonacci number is : $Fib. \nFull list of numbers generated: $List")
 
     fib = FibFun()
 
-    fData = dict(Fib=fib.Fibnth(args.num),List=fib.GetList())
+    fData = dict(num=args.num,Fib=fib.Fibnth(args.num),List=fib.GetList())
 
     if args.verbose:
         print tAllVerbose.substitute(fData)
