@@ -5,7 +5,7 @@ class FibFun(object):
 
     def __init__(self):
         self._a, self._b = 0,1
-        self._FibList = "{},{}".format(self._a,self._b)
+        self._FibList = "{}".format(self._a)
         self._last = self._b
     
     def GetList(self):
@@ -14,10 +14,10 @@ class FibFun(object):
     def Fibnth(self,n):
         for i in range(n):
             self._a,self._b = self._b,self._a+self._b
-            self._FibList += ",{}".format(self._b)
+            self._FibList += ",{}".format(self._a)
         
-        self._last = self._b
-        return self._b
+        self._last = self._a
+        return self._a
 
 
 
